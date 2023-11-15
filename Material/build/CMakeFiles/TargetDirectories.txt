@@ -1,0 +1,3 @@
+/home/user/learnopengl/project/BaseLighting/build/CMakeFiles/GLFW_test.dir
+/home/user/learnopengl/project/BaseLighting/build/CMakeFiles/edit_cache.dir
+/home/user/learnopengl/project/BaseLighting/build/CMakeFiles/rebuild_cache.dir
