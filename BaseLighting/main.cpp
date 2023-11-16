@@ -76,7 +76,7 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("/home/user/learnopengl/project/BaseLighting/Gourad_shading.vs", "/home/user/learnopengl/project/BaseLighting/Gourad_shading.fs");
+    Shader lightingShader("/home/user/learnopengl/project/BaseLighting/3.3.shader.vs", "/home/user/learnopengl/project/BaseLighting/3.3.shader.fs");
     Shader lightCubeShader("/home/user/learnopengl/project/BaseLighting/light_shader.vs", "/home/user/learnopengl/project/BaseLighting/light_shader.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes

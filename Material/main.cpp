@@ -76,13 +76,13 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("/home/user/learnopengl/project/BaseLighting/Gourad_shading.vs", "/home/user/learnopengl/project/BaseLighting/Gourad_shading.fs");
-    Shader lightCubeShader("/home/user/learnopengl/project/BaseLighting/light_shader.vs", "/home/user/learnopengl/project/BaseLighting/light_shader.fs");
+    Shader lightingShader("/home/user/learnopengl/project/Material/3.3.shader.vs", "/home/user/learnopengl/project/Material/3.3.shader.fs");
+    Shader lightCubeShader("/home/user/learnopengl/project/Material/light_shader.vs", "/home/user/learnopengl/project/Material/light_shader.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
-        -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+    -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
      0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
      0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
      0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
@@ -176,8 +176,18 @@ int main()
         lightingShader.use();
         lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         lightingShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
-        lightingShader.setVec3("lightPos", lightPos);
+        lightingShader.setVec3("light.position", lightPos);
         lightingShader.setVec3("viewPos", camera.Position);
+        lightingShader.setVec3("material.ambient",  0.0f, 0.1f, 0.06f);
+        lightingShader.setVec3("material.diffuse",  0.0f, 0.51f, 0.51f);
+        lightingShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
+        lightingShader.setFloat("material.shininess", 0.25f);
+
+
+        lightingShader.setVec3("light.ambient", 1.0f,1.0f,1.0f);
+        lightingShader.setVec3("light.diffuse", 1.0f,1.0f,1.0f);
+        lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
