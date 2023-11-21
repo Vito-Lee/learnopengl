@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/user/learnopengl/project/Multilight/build",
+  "command": "/usr/bin/clang -g -std=gnu11 -o CMakeFiles/GLFW_test.dir/glad.c.o -c /home/user/learnopengl/project/Multilight/glad.c",
+  "file": "/home/user/learnopengl/project/Multilight/glad.c",
+  "output": "CMakeFiles/GLFW_test.dir/glad.c.o"
+},
+{
+  "directory": "/home/user/learnopengl/project/Multilight/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++14 -o CMakeFiles/GLFW_test.dir/main.cpp.o -c /home/user/learnopengl/project/Multilight/main.cpp",
+  "file": "/home/user/learnopengl/project/Multilight/main.cpp",
+  "output": "CMakeFiles/GLFW_test.dir/main.cpp.o"
+}
+]
