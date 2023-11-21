@@ -1,0 +1,3 @@
+/home/user/learnopengl/project/Model_and_Mesh/build/CMakeFiles/GLFW_test.dir
+/home/user/learnopengl/project/Model_and_Mesh/build/CMakeFiles/edit_cache.dir
+/home/user/learnopengl/project/Model_and_Mesh/build/CMakeFiles/rebuild_cache.dir
