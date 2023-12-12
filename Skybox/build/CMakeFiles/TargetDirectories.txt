@@ -1,0 +1,3 @@
+/home/user/learnopengl/project/Skybox/build/CMakeFiles/GLFW_test.dir
+/home/user/learnopengl/project/Skybox/build/CMakeFiles/edit_cache.dir
+/home/user/learnopengl/project/Skybox/build/CMakeFiles/rebuild_cache.dir
